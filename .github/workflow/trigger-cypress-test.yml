@@ -1,0 +1,12 @@
+name: Trigger e2e coach cypress test
+on: push
+jobs: 
+  trigger-test: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Coach Repository Dispatch
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          repository: Akpjunior94/text-cypress-dispatch
+          event-type: my-event
