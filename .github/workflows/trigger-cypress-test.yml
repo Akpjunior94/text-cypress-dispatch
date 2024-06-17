@@ -8,5 +8,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
-          repository: Akpjunior94/text-cypress-dispatch
+          repository: CareerVillage/coach-end-to-end-tests
           event-type: my-event
